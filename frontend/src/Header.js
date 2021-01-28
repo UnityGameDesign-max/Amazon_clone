@@ -13,7 +13,6 @@ function Header() {
                 <small><span className="header_option_1">Deliver to</span></small>
                 <span className="header_option_2"><LocationOnOutlinedIcon  className="locationIcon"/>South Africa</span>
             </div>
- 
 
             <div className="header_search">
                 <input className="header_search_input" type="text" />
