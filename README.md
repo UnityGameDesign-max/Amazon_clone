@@ -12,7 +12,7 @@
   ## Installation
    Clone the repository for the Amazon clone
   
-   ### `git clone`
+   ### `git clone https://github.com/UnityGameDesign-max/Amazon_clone.git`
   
   Change directory to the frontend folder
   
