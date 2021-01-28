@@ -9,7 +9,6 @@ function SubHeader() {
                 <div className="sub_header_option1">
                     <MenuIcon className="ham_menu"/>
                     <a href="#"><span className="item1">All</span></a>
-                    
                 </div>
 
                 <div className="sub_header_option2">
