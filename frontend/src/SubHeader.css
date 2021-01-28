@@ -1,0 +1,9 @@
+.sub_header{
+    height:40px;
+    display: flex;
+    align-items: center;
+    background-color: #131921e0;
+    color: white;
+    position: sticky;
+    top: 0;
+}
