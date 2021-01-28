@@ -1,2 +1,2 @@
-![amazon img](frontend/static/amazon_logo.jpg)
+![amazon img](frontend/src/static/amazon_logo.jpg)
   # Amazon-clone
