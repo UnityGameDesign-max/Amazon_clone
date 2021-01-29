@@ -10,7 +10,6 @@ function Home() {
                 <img className="home_image" alt="" src="https://i.pinimg.com/originals/a2/b7/be/a2b7bed31006559ed35be11391f85187.jpg" />
             </div>
 
-
             <div className="home_row">
                 <Catergories card_header="Computers & Accessories" card_link="Shop now"  image="https://www.online-tech-tips.com/wp-content/uploads/2019/12/electronic-gadgets.jpeg" />
                 <Catergories card_header="Get fit at home" image="https://skinnyms.com/wp-content/uploads/2019/01/How-to-Get-Fit-with-the-Best-At-Home-Workout-1.png" card_link="Explore now" />
@@ -24,6 +23,11 @@ function Home() {
                 <SignIn title="Sign in for the best experience" btn_text="Sign in securely" image="https://www.naijatechguide.com/wp-content/uploads/2015/09/amazon-global-1.png"/>
             </div>
 
+            <div className="home_row">
+                <Catergories card_header="Explore home bedding" card_link="See more" image="https://cdn.shortpixel.ai/client/q_lossless,ret_img,w_600,h_420/https://custombeds.ie/wp-content/uploads/2020/11/capri-fabric-bed-600x420.jpg" />
+                <Catergories card_header="Summer T-shirts for him" card_link="See more" image="https://siatexcom.s3.amazonaws.com/content/upload/2018/11/bangladesh-t-shirt-manufacturer-supplier-exporter-factory.jpg" />
+                <Catergories card_header= "Stuffed animals and Toys" card_link="Shop now" image="https://24.lv/images/thumbnails/600/420/detailed/518/ID00993_3Deez-4_grande.jpg" />
+            </div>
             
         </div>
     )
