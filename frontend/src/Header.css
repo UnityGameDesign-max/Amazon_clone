@@ -1,10 +1,15 @@
 .header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+
+.header_one{
     height:60px;
     display: flex;
     align-items: center;
     background-color: #131921;
-    position: sticky;
-    top: 0;
 }
 
 .header_option{
@@ -105,7 +110,38 @@
     height: 12px;
     padding: 10px;
     border:none;
+    border-color: #cd9042;
     width: 100%;
     margin-left: 19px;
 }
 
+
+/* The second header goes underneath the main header */
+
+.header_two{
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131921e0;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.sub_header_links1{
+    display: flex;
+    align-items: center;
+}
+
+.sub_header_option1{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 1.1em;
+    font-weight: 500;
+}
