@@ -10,13 +10,17 @@
    - [CloudFunctions](CloudFunctions)
 
   ## Installation
-   Clone the repository for the Amazon clone
+- Clone the repository for the Amazon clone
   
    ### `git clone https://github.com/UnityGameDesign-max/Amazon_clone.git`
   
-  Change directory to the frontend folder
+- Change directory to the frontend folder
   
   ### `cd frontend`
+
+- Install all the dependencies that are required
+
+  ### `npm install reactstrap`
   
   To start the application
   
