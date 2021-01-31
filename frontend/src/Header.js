@@ -17,7 +17,10 @@ function Header() {
                 <Link>
                     <div className="header_option">
                         <small><span className="header_option_1">Deliver to</span></small>
-                        <span className="header_option_2"><LocationOnOutlinedIcon  className="locationIcon"/>South Africa</span>    
+                        <span className="header_option_2">
+                            <LocationOnOutlinedIcon  className="locationIcon"/>
+                            South Africa
+                        </span>    
                     </div>
                 </Link>
                 
