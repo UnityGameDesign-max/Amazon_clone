@@ -8,7 +8,6 @@ function SignIn({title, btn_text, image}) {
                 <h2 className="card_header">{title}</h2>
                 <button className='sigin_btn'>{btn_text}</button>
             </div>
-
             <div className="description_catergories">
                 <img alt="" src={image}/>
             </div>
