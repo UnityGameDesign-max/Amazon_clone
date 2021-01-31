@@ -5,6 +5,7 @@ import Home from './Home'
 import {BrowserRouter as Router, Switch, Route}
 from'react-router-dom'
 import Deals from './Deals'
+import Footer from './Footer'
 import Login from './Login'
 
 
@@ -14,7 +15,8 @@ function App() {
       <div className="app">
        
         <Switch>
-
+          
+  
           <Route path="/login">
             <Login />
 
@@ -27,6 +29,7 @@ function App() {
           <Route path="/">
             <Header />
             <Home />
+            <Footer />
           </Route>
 
         </Switch>
