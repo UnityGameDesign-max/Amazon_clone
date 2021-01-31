@@ -2,7 +2,6 @@
     position: sticky;
     top: 0;
     z-index: 2;
-
 }
 
 .header_one{
@@ -91,6 +90,7 @@
     margin-top: 18px;
     
 }
+
 
 .header_search{
     display: flex;
