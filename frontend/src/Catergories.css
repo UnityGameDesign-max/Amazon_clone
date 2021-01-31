@@ -12,13 +12,18 @@
     background-color: rgba(255, 255, 255, 0.788);
     z-index: 1;
 
-
 }
 
 .catergories_info{
     color: rgb(77, 74, 74);
     text-align: left;
     margin-bottom: 22px;
+}
+
+.shop_now:hover{
+    text-decoration: underline;
+    color: rgb(238, 13, 13);
+
 }
 
 .catergories img {
