@@ -2,10 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    height: 753px;
 }
 
 .login_logo{
-    width: 150px;
+    width: 130px;
     object-fit: contain;
     margin-top: 12px;
     margin-bottom: 10px;
@@ -41,6 +43,17 @@
 
 .login_container p{
     margin-top: 15px;
+    font-size: 12px;
+    
+    
+}
+.email{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.password{
+    margin-bottom: 20px;
     font-size: 12px;
 }
 
