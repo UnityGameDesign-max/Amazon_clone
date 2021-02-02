@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 280px;
+    padding: 37px;
+    margin-top: 15px;
+    background-color: #232F3E;
+    font: 14px Arial, sans-serif;
+}
+
+
+
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
+}
