@@ -7,7 +7,7 @@ function Catergories({card_header, image, card_link}) {
             <div className="catergories_info">
                 <h2 className="card_header">{card_header}</h2>
             </div>
-            <img alt="" src={image}/>
+            <img alt="" src={process.env.PUBLIC_URL + image}/>
             <a className="shop_now" href="#">{card_link}</a>
         </div>
     )
