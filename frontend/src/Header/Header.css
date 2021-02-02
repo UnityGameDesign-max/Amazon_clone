@@ -1,0 +1,149 @@
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header_one{
+    height:60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+}
+
+.header_option{
+
+    display: flex;
+    align-items: vertical;
+    flex-direction: column;
+}
+
+
+
+.header_option_1{
+    color: white;
+    margin-left: 2.6em;
+    font-size: 13px;
+    
+}
+
+.header_option_2{
+    color: white;
+    margin-top: 0em;
+    font-size: 15px;
+    font-weight: 800;
+    
+}
+
+.header_right_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_option_right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 10px;
+    color: white;
+}
+
+.header_option_right_1{
+    font-size: 13px;
+}
+
+.header_option_right_2{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.header_option_right_3{
+    font-size:13px;
+    margin-right: 1.2em;
+}
+
+.header_option_right_4{
+    font-size: 15px;
+    font-weight: 800;
+    margin-right: 1.2em;
+}
+
+.header_option_right_cart{
+    display: flex;
+    align-items:center;
+}
+
+.shopping_cart{
+    color: white;
+    margin-right: 0.4em;
+}
+.shopping_cart_number{
+    color: orange;
+}
+
+.locationIcon{
+    color: white !important;
+}
+
+.header_logo{
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+    
+}
+
+
+.header_search{
+    display: flex;
+    flex: 0.96;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.header_searchIcon{
+    background-color: #cd9042;
+    padding: 5px;
+    height: 22px !important;
+}
+
+
+.header_search_input{
+    height: 12px;
+    padding: 10px;
+    border:none;
+    border-color: #cd9042;
+    width: 100%;
+    margin-left: 19px;
+}
+
+
+/* The second header goes underneath the main header */
+
+.header_two{
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #232F3E;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.sub_header_links1{
+    display: flex;
+    align-items: center;
+}
+
+.sub_header_option1{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 1.1em;
+    font-weight: 500;
+}
