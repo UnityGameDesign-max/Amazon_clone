@@ -24,6 +24,7 @@ function App() {
           <Route path="/deals">
             <Header />
             <Deals />
+            <Footer />
           </Route>
 
           <Route path="/">
