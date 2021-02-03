@@ -52,5 +52,6 @@ function Products({id, product_image, price_dollar, price_cent, product_descript
     )
 }
 
-
 export default Products
+
+
