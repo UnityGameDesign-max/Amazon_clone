@@ -62,7 +62,6 @@ function Login() {
                     If you just want to test, use the following login details:
                     
                 </p>
-
                 <span className="email"><strong>Email : guest@gmail.com</strong></span>
                 <span className="password"><strong>Password : 123456</strong></span> 
 
