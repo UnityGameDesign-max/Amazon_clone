@@ -1,9 +1,29 @@
 import { Link } from '@material-ui/core'
 import React from 'react'
 import './Products.css'
+import { useStateValue } from '../StateProvider/StateProvider'
 
 
-function Products({product_image, price_dollar, price_cent, product_description, specials}) {
+function Products({id, product_image, price_dollar, price_cent, product_description, specials}) {
+
+    const [state, dispatch] = useStateValue();
+
+    const addToBasket = () =>{ 
+        //dispatch the items into the dataLayer
+        
+        dispatch({
+            type: 'ADD_TO_BASKET',
+            item: {
+                id: id,
+                product_image: product_image,
+                price_dollar: price_dollar,
+                price_cent: price_cent,
+                product_description: product_description
+            }
+        })
+    }
+
+
     return (
         <div className="products">
             
@@ -25,7 +45,7 @@ function Products({product_image, price_dollar, price_cent, product_description,
 
                 <span></span>
 
-                <button className="cart-btn">Add to Cart</button>
+                <button className="cart-btn" onClick={addToBasket}>Add to Cart</button> 
                 
             </div>
         </div>
