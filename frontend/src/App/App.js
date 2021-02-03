@@ -17,8 +17,6 @@ function App() {
       <div className="app">
        
         <Switch>
-          
-  
           <Route path="/login">
             <Login />
           </Route>
@@ -42,6 +40,7 @@ function App() {
 
         </Switch>
       </div>
+    
     </Router>
   );
 }
