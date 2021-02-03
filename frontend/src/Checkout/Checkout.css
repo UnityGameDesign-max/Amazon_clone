@@ -1,0 +1,25 @@
+.checkout{
+    display:flex;
+}
+
+
+.checkout_left{
+    background-color: white;
+    width: 70%;
+    height: max-content;
+    margin-top: 38px;
+    margin-left: 20px;
+}
+
+.checkout_left_title{
+    font-weight: 450;
+    color: #0F1111;
+    padding: 10px;
+   
+}
+
+.checkout_pricer_border{
+    text-align: right;
+    border-bottom: 1px solid lightgray;
+    margin-right: 5px;
+}
