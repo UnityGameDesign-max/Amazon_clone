@@ -3,8 +3,13 @@ export const initialState = {
 
 };
 
-export const getBasketTotal =(basket) =>
-    basket?.reduce((amount, item) => item.price_dollar + amount, 0); 
+
+//Selector
+export const getBasketTotal =(basket) =>    
+    basket?.reduce((amount, item) => item.price_dollar/1 + item.price_cent/100 + amount, 0);
+    // Nami Angazi
+    // I also don't know what happened 
+
 
 const reducer = (state, action) =>{
     switch(action.type){
@@ -18,5 +23,6 @@ const reducer = (state, action) =>{
             return state; 
     }
 };
+
 
 export default reducer
