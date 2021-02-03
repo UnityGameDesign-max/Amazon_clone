@@ -28,7 +28,6 @@ function Subtotal() {
                 displayType={"text"}
                 thousandsSeparator={true}
                 prefix={"$"}
-                
             />
 
             <button className="btn-checkout">Proceed to checkout</button>
@@ -36,4 +35,4 @@ function Subtotal() {
     )
 }
 
-export default Subtotal 
+export default Subtotal
