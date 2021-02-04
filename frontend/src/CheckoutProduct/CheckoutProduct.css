@@ -2,6 +2,7 @@
     display: flex;
     border-bottom: 1px solid lightgray;
     justify-content: space-between;
+    padding: 10px;
     
 }
 
@@ -11,15 +12,34 @@
 }
 
 .checkoutProduct_description{
-    text-align: center;
+    text-align: left;
     padding-right: 79px;
+    font-weight: 600;
     font-size: 20px;
     color: #007185
 }
 
+.checkbox{
+    margin-top: 5px;
+    margin-right: 3px;
+}
+
 .gift_info{
     display: flex;
+    text-align: center;
 }
+.gift_text{
+    margin-right: 4px;
+}
+.learn_more {
+    color: #007185;
+    font-weight: 400;
+}
+
+.delete_btn{
+    color:#007185;
+}
+
 
 .price{
     padding-right: 10px;
