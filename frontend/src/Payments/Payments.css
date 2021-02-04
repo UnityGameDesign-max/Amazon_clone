@@ -1,0 +1,19 @@
+.payment_container{
+    background-color: white;
+    height: max-content;
+}
+
+.checkout_title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    color: #0f1111;
+}
+
+.items{
+    color: rgb(199, 39, 172);
+}
+
+/* .payment_section{
+
+} */
