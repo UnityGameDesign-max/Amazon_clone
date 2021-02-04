@@ -1,8 +1,29 @@
 import React from 'react'
 import './CheckoutProduct.css'
-import { Link } from 'react-router-dom'
+import { useStateValue } from '../StateProvider/StateProvider'
 
-function CheckoutProduct({product_image, product_description, price_dollar, price_cent}) {
+
+function CheckoutProduct({id , product_image, product_description, price_dollar, price_cent}) {
+
+
+    const [{basket}, dispatch] = useStateValue();
+
+    const removeFromBasket = () =>{ 
+        //delete items into the dataLayer
+        
+        dispatch({
+            type: 'REMOVE_FROM_BASKET',
+            item: {
+                id: id,
+                product_image: product_image,
+                price_dollar: price_dollar,
+                price_cent: price_cent,
+                product_description: product_description
+            }
+        })
+    }
+
+
     return (
         <div className="checkoutProduct">
             <img className="checkoutProduct_img" src={process.env.PUBLIC_URL + product_image} alt="checkout__img"/>
@@ -12,10 +33,13 @@ function CheckoutProduct({product_image, product_description, price_dollar, pric
                 <div className="gift_info">
                     <input className="checkbox" type="checkbox" />
                     <span className="gift_text">This is a gift</span>
-                    {/* <Link to="">
-                        <span className="learn_more">Learn more</span>
-                    </Link> */}
+                    
+                    <span className="learn_more">Learn more</span>
+ 
                 </div>
+                
+                <a href="" className="delete_btn" onClick={removeFromBasket}>Delete</a>
+            
                 
             </div>
 
@@ -28,7 +52,8 @@ function CheckoutProduct({product_image, product_description, price_dollar, pric
                     {price_cent}
                 </sup>
             </span>
-            
+
+    
         </div>
     )
 }
