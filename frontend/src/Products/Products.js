@@ -42,9 +42,7 @@ function Products({id, product_image, price_dollar, price_cent, product_descript
                 <Link>
                     <span className="product_description">{product_description}</span>
                 </Link>
-
-                <span></span>
-
+                
                 <button className="cart-btn" onClick={addToBasket}>Add to Cart</button> 
                 
             </div>
