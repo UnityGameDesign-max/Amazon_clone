@@ -9,6 +9,7 @@ import Footer from '../Footer/Footer'
 import Login from '../Login/Login'
 import Checkout from '../Checkout/Checkout'
 import Subtotal from '../Subtotal/Subtotal'
+import Payments from '../Payments/Payments'
 
 
 function App() {
@@ -30,6 +31,13 @@ function App() {
           <Route path="/checkout">
             <Header /> 
             <Checkout />
+            <Footer />
+          </Route>
+
+          <Route path="/payments">
+            <Header /> 
+            <Payments />
+            <Footer />
           </Route>
 
           <Route path="/">
