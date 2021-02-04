@@ -1,0 +1,31 @@
+.checkoutProduct{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    justify-content: space-between;
+    
+}
+
+.checkoutProduct_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkoutProduct_description{
+    text-align: center;
+    padding-right: 79px;
+    font-size: 20px;
+    color: #007185
+}
+
+.gift_info{
+    display: flex;
+}
+
+.price{
+    padding-right: 10px;
+}
+
+.checkoutProduct_img{
+    width: 150px;
+    padding: 17px;
+}
