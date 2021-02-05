@@ -21,6 +21,7 @@
 
 .checkout_left_subtotal{
     text-align: right;
+    border-top: 1px solid lightgray;
     margin-right: 10px;
     font-weight: 400;
     font-size: 28px;
