@@ -1,6 +1,39 @@
 .payment_container{
+    display: flex;
+    flex-direction: column;
     background-color: white;
+    border-bottom: 1px solid lightgray;
     height: max-content;
+}
+
+.payment_section{
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.address_title{
+    margin-left: 0;
+}
+
+.payment_details{
+    margin-bottom: 0;
+}
+
+.payment_address_title{
+    flex: 0.2;
+}
+
+.payment_processing-btn{ 
+    padding: 1px;
+}
+
+.payment_title{
+    flex: 0.2;
+}
+
+.payment_address, .payment_items, .payment_details {
+    flex: 0.8;
 }
 
 .checkout_title{
@@ -14,6 +47,3 @@
     color: rgb(199, 39, 172);
 }
 
-/* .payment_section{
-
-} */
