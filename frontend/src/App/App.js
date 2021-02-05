@@ -10,6 +10,11 @@ import Login from '../Login/Login'
 import Checkout from '../Checkout/Checkout'
 import Subtotal from '../Subtotal/Subtotal'
 import Payments from '../Payments/Payments'
+import { loadStripe } from '@stripe/stripe-js'
+import { Elements } from '@stripe/react-stripe-js'
+
+
+const promise = loadStripe('pk_test_51IGloHBskh1aSg7kuKz6P4ZvjzHbKcpRKca1nycs5fSFFUieg9KAE3r2Mav6U1F7yk4whfGgJgRon3ZSokKBcHEc00pg9M3Y1g');
 
 
 function App() {
@@ -35,8 +40,11 @@ function App() {
           </Route>
 
           <Route path="/payments">
-            <Header /> 
-            <Payments />
+            <Header />
+            <Elements stripe={promise}>
+              <Payments />  
+            </Elements>
+                        
             <Footer />
           </Route>
 
