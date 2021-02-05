@@ -1,6 +1,6 @@
 .checkoutProduct{
     display: flex;
-    border-bottom: 1px solid lightgray;
+    /* border-bottom: 1px solid lightgray; */
     justify-content: space-between;
     padding: 10px;
     
