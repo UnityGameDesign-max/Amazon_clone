@@ -20,7 +20,7 @@
 
 - Install all the dependencies that are required
 
-  ### `npm install reactstrap`
+  ### `npm install`
   
   To start the application
   
