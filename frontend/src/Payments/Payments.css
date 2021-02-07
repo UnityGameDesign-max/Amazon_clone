@@ -28,6 +28,11 @@
     padding: 1px;
 }
 
+.payment_processing-btn span{
+    display: flex;
+    justify-content: row;
+}
+
 .payment_title{
     flex: 0.2;
 }
