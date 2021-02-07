@@ -14,8 +14,8 @@ function Payments() {
     const stripe = useStripe();
     const elements = useElements();
 
-    const [succeeded, setSucceeded] = useStateValue(false);
-    const [proccessing, setProccessing] = useStateValue("");
+    const [succeeded, setSucceeded] = useState(false);
+    const [proccessing, setProccessing] = useState("");
     const [error, setError] = useState(null);
     const [disabled, setDisabled] = useState(true);
 
@@ -24,7 +24,7 @@ function Payments() {
 
     useEffect(() =>{
         const getClientSecret = async () =>{
-            const response = await axios({
+            const response = await axios({  
                 method: 'post',
                 url: `/payments/create?Total=${getBasketTotal(basket) * 100}`
 
@@ -37,14 +37,18 @@ function Payments() {
     }, [basket])
 
     const handleSubmit = async (e) =>{
-        //This is a function that handle the submitting of the form
+       // This is a function that handle the submitting of the form
         e.preventDefault();
         setProccessing(true);
         const payload = await stripe.confirmCardPayment(clientSecret, {
             payment_method: {
                 card: elements.getElement(CardElement)
             }
-        }).then(({payment}) => {
+        }).then(({paymentIntern}) => {
+            setProccessing(false);
+            setSucceeded(true);
+            setError(null);
+            
             
         })
     }
@@ -115,8 +119,9 @@ function Payments() {
                                     prefix={"$"}
                                 />
 
-                                <button className="payment_processing-btn" disabled={proccessing || disabled || succeeded}>
-                                    <span>{proccessing ? <p>Processing</p> : "Buy Now"}</span>
+                                <button className="payment_processing-btn" disabled={disabled || proccessing || succeeded}>
+                                    <span>{proccessing ? <p>Processing</p>: "Buy Now"}</span>
+                                
                                 </button>
                             </div>
 
