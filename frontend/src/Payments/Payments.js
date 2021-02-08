@@ -26,7 +26,7 @@ function Payments() {
 
     useEffect(() =>{
         const getClientSecret = async () =>{
-            const response = await axios({
+            const response = await axios({  
                 method: 'post',
                 url: `/create_payments?Total=${getBasketTotal(basket) * 100}`
 
@@ -41,14 +41,14 @@ function Payments() {
     console.log('The secret is: ', clientSecret)
 
     const handleSubmit = async (e) =>{
-        //This is a function that handle the submitting of the form
+       // This is a function that handle the submitting of the form
         e.preventDefault();
         setProccessing(true);
         const payload = await stripe.confirmCardPayment(clientSecret, {
             payment_method: {
                 card: elements.getElement(CardElement)
             }
-        }).then(({payment}) => {
+        }).then(({paymentIntent}) => {
 
             setSucceeded(true);
             setError(null);
@@ -125,8 +125,9 @@ function Payments() {
                                     prefix={"$"}
                                 />
 
-                                <button className="payment_processing-btn" disabled={proccessing || disabled || succeeded}>
-                                    <span>{proccessing ? <p>Processing</p> : "Buy Now"}</span>
+                                <button className="payment_processing-btn" disabled={disabled || proccessing || succeeded}>
+                                    <span>{proccessing ? <p>Processing</p>: "Buy Now"}</span>
+                                
                                 </button>
                             </div>
 
