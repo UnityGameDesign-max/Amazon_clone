@@ -8,7 +8,7 @@ function CheckoutProduct({id , product_image, product_description, price_dollar,
 
     const [{basket}, dispatch] = useStateValue();
 
-    const removeFromBasket = () =>{ 
+    const removeFromBasket = () =>{
         //delete items into the dataLayer
         
         dispatch({
