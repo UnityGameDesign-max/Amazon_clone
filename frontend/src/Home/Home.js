@@ -7,7 +7,7 @@ function Home() {
     return (
         <div className="home">
             <div className="home_container">
-                <img className="home_image" alt="" src="https://i.pinimg.com/originals/a2/b7/be/a2b7bed31006559ed35be11391f85187.jpg" />
+                <img className="home_image" alt="" src={process.env.PUBLIC_URL +"amazon_pics/1st_background_img.jpg"} />
             </div>
 
             <div className="home_row">
