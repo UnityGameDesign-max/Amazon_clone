@@ -7,32 +7,32 @@ function Footer() {
     return (
         <div className="footer">
             <div className="footer_links">
-                <h3>Get To Know Us</h3>
-                <span>Careers</span>
-                <span>Blog</span>
-                <span>About Amamzon</span>
-                <span>Amazon Devices</span>
+                <h3 >Get To Know Us</h3>
+                <span className="footer_links_text">Careers</span>
+                <span className="footer_links_text">Blog</span>
+                <span className="footer_links_text">About Amamzon</span>
+                <span className="footer_links_text">Amazon Devices</span>
             </div>
 
             <div className="footer_links">
                 <h3>Make Money with us</h3>
-                <span>Sell on Amazon</span>
-                <span>Sell on Amazon Business</span>
-                <span>Sell your apps on Amazon</span>
-                <span>Become an Affiliate</span>
-                <span>Advertise Your Products</span>
-                <span>Sell-Publish with Us</span>
-                <span>Host an Amazon Hub</span>
+                <span className="footer_links_text">Sell on Amazon</span>
+                <span className="footer_links_text">Sell on Amazon Business</span>
+                <span className="footer_links_text">Sell your apps on Amazon</span>
+                <span className="footer_links_text">Become an Affiliate</span>
+                <span className="footer_links_text">Advertise Your Products</span>
+                <span className="footer_links_text">Sell-Publish with Us</span>
+                <span className="footer_links_text">Host an Amazon Hub</span>
             </div>
 
             <div className="footer_links">
                 <h3>Amazon Payment Products</h3>
                 
-                <span>Amazon Business Card</span>
+                <span className="footer_links_text">Amazon Business Card</span>
                 
-                <span>Shop with Points</span>
-                <span>Reload your Balance</span>
-                <span>Amazon Currency Converter</span>
+                <span className="footer_links_text">Shop with Points</span>
+                <span className="footer_links_text">Reload your Balance</span>
+                <span className="footer_links_text">Amazon Currency Converter</span>
             </div>
 
 
