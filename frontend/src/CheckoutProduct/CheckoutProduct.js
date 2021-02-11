@@ -23,7 +23,6 @@ function CheckoutProduct({id , product_image, product_description, price_dollar,
         })
     }
 
-
     return (
         <div className="checkoutProduct">
             <img className="checkoutProduct_img" src={process.env.PUBLIC_URL + product_image} alt="checkout__img"/>
