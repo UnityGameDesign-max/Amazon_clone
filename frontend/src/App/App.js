@@ -54,6 +54,7 @@ function App() {
         <Switch>
 
         <Route path="/orders">
+          <Header />
           <Orders />
         </Route>
           <Route path="/login">
