@@ -1,7 +1,13 @@
+.all_items{
+    display: flex;
+    
+}
+
 .all_products{
-    padding: 14px;
+    padding: 27px;
     margin-left: 5px;
 }
+
 
 .product_results{
     margin-bottom: 14px;
