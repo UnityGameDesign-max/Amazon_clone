@@ -39,7 +39,7 @@ function Payments() {
 
     }, [basket])
 
-    console.log('The secret is: ', clientSecret)
+    // console.log('The secret is: ', clientSecret)
 
     const handleSubmit = async (e) =>{
        // This is a function that handle the submitting of the form
@@ -51,15 +51,18 @@ function Payments() {
             }
         }).then(({paymentIntent}) => {
 
-            db.collection('users')
-            .doc(user?.uid)
-            .collection('orders')
-            .doc(paymentIntent.id)
-            .set({
+            db
+             .collection('users')
+             .doc(user?.uid)
+             .collection('orders')
+             .doc(paymentIntent.id)
+             .set({
                 basket: basket,
                 amount: paymentIntent.amount,
                 created: paymentIntent.created
-            })
+             })
+
+            console.log(db.collection('users'));
 
             setSucceeded(true);
             setError(null);
@@ -89,7 +92,7 @@ function Payments() {
                     </div>
 
                     <div className="payment_address">
-                        <p className="payment_details">user12@gmail.com</p>
+                        <p className="payment_details">{!user ? "user@gmail.com" : user.email}</p>
                         <p className="payment_details">217 Ramokonopi East</p>
                         <p className="payment_details">Katlehong, Germiston</p>
                     </div>
