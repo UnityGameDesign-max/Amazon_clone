@@ -52,3 +52,15 @@
     color: rgb(199, 39, 172);
 }
 
+.payment_details form div button{
+    background-color:#f0c14b;
+    border-radius: 2px;
+    width: 20%;
+    height: 30px;
+    border: 1px solid;
+    font-weight: bolder;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    padding: 5px 70px;
+    color: #111;
+}
