@@ -1,11 +1,28 @@
-import React, { useState} from 'react'
+import React, { useEffect, useState} from 'react'
 import './Orders.css'
 import moment from 'moment'
-
+import {useStateValue} from '../StateProvider/StateProvider'
+import {db} from '../Firebase/firebase'
 
 function Orders() {
+    const [{basket, user}, dispatch] = useStateValue();
     
     const[orders, setOrders] = useState([]);
+
+    useEffect(() =>{
+        db.collection('users')
+        .doc(user?.uid)
+        .collection('orders')
+        .orderBy('created', 'desc')
+        .onSnapshot(snapshot => {
+            setOrders(snapshot.doc.map(doc =>({
+                id: doc.id,
+                data: doc.data()
+            })))
+        })
+    }, [])
+
+
 
 
     return (
