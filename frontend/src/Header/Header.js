@@ -4,6 +4,8 @@ import SearchIcon from '@material-ui/icons/Search';
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
 import MenuIcon from '@material-ui/icons/Menu';
 import ShoppingBasketOutlinedIcon from '@material-ui/icons/ShoppingBasketOutlined';
+import IconButton from '@material-ui/core/IconButton';
+import Menu from '@material-ui/core/Menu'
 import {Link} from 'react-router-dom';
 import {useStateValue} from '../StateProvider/StateProvider';
 import { auth } from '../Firebase/firebase';
@@ -24,7 +26,7 @@ function Header() {
         <div className="header">
             <div className="header_one">
                 <Link to="/">
-                    <img className="header_logo" alt="amazon_img" src={process.env.PUBLIC_URL +"1st_background_img.jpg"}/>
+                    <img className="header_logo" alt="amazon_img" src={process.env.PUBLIC_URL +"amazon_pics/amazon_header_logo.png"}/>
                 </Link>
                 
                 <Link>
@@ -77,8 +79,9 @@ function Header() {
                             <span className="item1">All</span>
                         </div>
                     </Link>
-                    
 
+                               
+    
                     <Link to ="/deals">
                         <div className="sub_header_option2">
                             <span className="item2">Today's Deals</span>
