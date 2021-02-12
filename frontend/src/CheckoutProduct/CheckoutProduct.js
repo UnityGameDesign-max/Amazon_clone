@@ -57,6 +57,4 @@ function CheckoutProduct({id , product_image, product_description, price_dollar,
     )
 }
 
-
-
 export default CheckoutProduct
