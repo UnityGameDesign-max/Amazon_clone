@@ -1,11 +1,36 @@
 import React from 'react'
 import './Home.css'
 import Catergories from '../Catergories/Categories'
+import {Alert, AlertTitle} from '@material-ui/lab/';
 import SignIn from '../SignIn/SignIn'
+import {makeStyles} from '@material-ui/core/styles'
+
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+      width: '100%',
+      '& > * + *': {
+        marginTop: theme.spacing(2),
+      },
+    },
+}));
+
+
+
 
 function Home() {
+    const classes = useStyles();
+    
     return (
         <div className="home">
+            <div className={classes.root}>
+                {window.pay ? (<Alert severity="success">
+                <AlertTitle>Success</AlertTitle>
+                {"\u{1F600} Your payment order has been successfully Approved!"}
+            </Alert> ) : " " }
+                  
+               
+            </div>
             <div className="home_container">
                 <img className="home_image" alt="" src={process.env.PUBLIC_URL +"amazon_pics/1st_background_img.jpg"} />
             </div>
