@@ -19,7 +19,6 @@
 
 input[type="checkbox"]{
     margin-right: 5px;
-    /* display: block; */
 }
 
 .deal_types{
@@ -31,4 +30,26 @@ input[type="checkbox"]{
 .deal_types_link{
    padding-bottom: 0px;
     color: #0066C0;
+    line-height: .9em;
+}
+
+.price_header{
+    padding: 15px;
+    color: #0f1111;
+    font-weight: 500;
+    padding-bottom: 10px;
+
+}
+
+
+.price_range{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.price_range_link{
+   padding-bottom: 0px;
+    color: #0066C0;
+    line-height: .9em;
 }
