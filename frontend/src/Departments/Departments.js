@@ -70,10 +70,11 @@ function Departments() {
 
             <h3 className="price_header">Price</h3>
             <div className ="price_range">
-                <a className ="price_range_link" href="#">Deal of the Day</a>
-                <a className ="price_range_link" href="#">Lightning Deals</a>
-                <a className ="price_range_link" href="#">Savings & Sales</a>
-                <a className ="price_range_link" href="#">Prime Early Access Deals</a>
+                <a className ="price_range_link" href="#">Under $25</a>
+                <a className ="price_range_link" href="#">$25 to $50</a>
+                <a className ="price_range_link" href="#">$50 to $100</a>
+                <a className ="price_range_link" href="#">$100 to $200</a>
+                <a className ="price_range_link" href="#">$200 & Above</a>
             </div>
         </div>
     )
