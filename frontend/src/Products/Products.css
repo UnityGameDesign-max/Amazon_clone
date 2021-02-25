@@ -4,9 +4,9 @@
     justify-content: flex-end;
     object-fit: contain;
     margin: 0.5px;
-    padding: 30px;
+    padding: 20px;
     width:100%;
-    max-width: 350px;
+    max-width: 480px;
     max-height: 470px;
     background-color: rgb(255, 255, 255);
     z-index: 1;
