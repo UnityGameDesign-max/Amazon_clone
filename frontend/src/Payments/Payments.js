@@ -51,18 +51,20 @@ function Payments() {
             }
         }).then(({paymentIntent}) => {
 
-            db
-             .collection('users')
-             .doc(user?.uid)
-             .collection('orders')
-             .doc(paymentIntent.id)
-             .set({
-                basket: basket,
-                amount: paymentIntent.amount,
-                created: paymentIntent.created
-             })
-
             console.log(db.collection('users'));
+
+            // db
+            //  .collection('users')
+            //  .doc(user?.uid)
+            //  .collection('orders')
+            //  .doc(paymentIntent.id)
+            //  .set({
+            //     basket: basket,
+            //     amount: paymentIntent.amount,
+            //     created: paymentIntent.created
+            //  })
+
+          
 
             setSucceeded(true);
             setError(null);
