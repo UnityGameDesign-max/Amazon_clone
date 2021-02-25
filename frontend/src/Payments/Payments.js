@@ -9,10 +9,14 @@ import { getBasketTotal } from '../Reducer/Reducer'
 import axios from '../Axios/axios'
 import { db } from '../Firebase/firebase'
 
+
+
+
+
 function Payments() {
 
     const [{basket, user}, dispatch] = useStateValue();
-
+    
     const stripe = useStripe();
     const elements = useElements();
     const history = useHistory();
@@ -52,6 +56,7 @@ function Payments() {
         }).then(({paymentIntent}) => {
 
             console.log(db.collection('users'));
+             window.pay = db.collection('users');
 
             // db
             //  .collection('users')
@@ -74,7 +79,9 @@ function Payments() {
                 type: 'EMPTY_BASKET'
             })
 
-            history.replace('/orders')
+            history.replace('/')
+
+           
         })
     }
 
@@ -94,6 +101,7 @@ function Payments() {
                     </div>
 
                     <div className="payment_address">
+                        
                         <p className="payment_details">{!user ? "user@gmail.com" : user.email}</p>
                         <p className="payment_details">217 Ramokonopi East</p>
                         <p className="payment_details">Katlehong, Germiston</p>
