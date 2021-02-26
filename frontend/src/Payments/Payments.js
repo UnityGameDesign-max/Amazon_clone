@@ -153,7 +153,7 @@ function Payments() {
                                 />
 
                                 <button className="payment_processing-btn" disabled={disabled || proccessing || succeeded}>
-                                    <span>{proccessing ? <p>Processing</p>: "Buy Now"}</span>
+                                    <span>{proccessing ? (<p>Processing</p>): "Buy Now"}</span>
                                 
                                 </button>
                             </div>
