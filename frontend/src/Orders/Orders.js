@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from 'react'
 import './Orders.css'
-import moment from 'moment'
+
 import {useStateValue} from '../StateProvider/StateProvider'
 import {db} from '../Firebase/firebase'
 
