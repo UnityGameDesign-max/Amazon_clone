@@ -53,7 +53,7 @@
 
 - To start the back-end application
     ```javascript
-    firebase emulator:start
+    firebase emulators:start
     ```
 
   
