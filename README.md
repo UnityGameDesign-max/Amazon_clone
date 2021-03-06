@@ -1,29 +1,60 @@
 ![amazon img](frontend/public/static/R42a7861bb1a403af534b18986ab4e198.png)
-  # Amazon
+  # *Amazon*
   
-  This directory is for the Amazon clone, one of the famous e-commerce strore. 
+  ### This is a clone of the famous e-commerce store, Amazon. It has full e-commerce functionality. Some of the functionality includes:<br>
+    - Full user authentication and signup using firebase.
+    - Product display
+    - Real time cart functionality (cart updates in real time)   
+    - Payment processing using Stripe
 
   ## Tools 
    - [REACT.js](REACT.js)
    - [MongoDB](MongoDB)
    - [FireBase](FireBase)
    - [CloudFunctions](CloudFunctions)
+   - [Node Js](Node.Js)
 
   ## Installation
 - Clone the repository for the Amazon clone
+  ```javascript
+  git clone https://github.com/UnityGameDesign-max/Amazon_clone.git
+  ```
+   
+- To start the front-end: change directory to the frontend folder
+  ```javascript
+  cd frontend
+  ```
   
-   ### `git clone https://github.com/UnityGameDesign-max/Amazon_clone.git`
+- Install all the dependencies that are required
+    ```javascript
+    npm install
+    ```
   
-- Change directory to the frontend folder
-  
-  ### `cd frontend`
+- To start the front-end application
+    ```javascript
+    npm start or yarn start
+    ```
+<br>
+
+- To start the back-end: change directory to the backend folder
+    ```javascript
+    cd backend
+    ```
+
+- Change the directory again
+    ```javascript
+    cd functions
+    ```
 
 - Install all the dependencies that are required
+    ```javascript
+    npm install
+    ```
 
-  ### `npm install`
-  
-  To start the application
-  
-  ### `npm start` or  `yarn start`
+- To start the back-end application
+    ```javascript
+    firebase emulator:start
+    ```
+
   
   
