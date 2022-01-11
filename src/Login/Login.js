@@ -58,8 +58,8 @@ function Login() {
                 </form>
 
                 <p>
-                    <strong>Disclaimer</strong>: This is a fake Amazon Clone created by Tumelo Mahlangu and Lehlohonolo Mopeli
-                    to showcase their ReactJs skills. This web application has full user authentication(you can register and gain access).
+                    <strong>Disclaimer</strong>: This is a fake Amazon Clone created by Tumelo Mahlangu
+                    to showcase his ReactJs skills. This web application has full user authentication(you can register and gain access).
                     If you just want to test, use the following login details:
                     
                 </p>
