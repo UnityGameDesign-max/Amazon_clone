@@ -22,9 +22,6 @@ function Orders() {
         })
     }, [])
 
-
-
-
     return (
         <div className="order">
             <h2>Your Orders</h2>
